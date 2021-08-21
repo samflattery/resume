@@ -1,0 +1,54 @@
+%-------------------------------------------------------------------------------
+%   SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=awesome,
+}
+
+
+
+%-------------------------------------------------------------------------------
+%   CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Software Engineering Intern} % Job title
+    {Google} % Organization
+    {Ireland (Remote)} % Location
+    {May. 2021 - Aug. 2021} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item Worked on the \href{https://developer.android.com/training/safetynet/attestation}{SafetyNet Attestation API}, an anti-abuse platform which assesses device side integrity on Android devices
+        \item Designed and implemented a principled way to process device information and produce a new integrity verdict for a new class of device
+        \item Added monitoring metrics and a graphical dashboard to this system to allow the onduty to recognize and respond to scaled abuse
+        \item Extended the system that calculates preexisting \href{https://developer.android.com/training/safetynet/attestation\#potential-integrity-verdicts}{integrity verdicts} in a way that made it more configurable, scalable and easier to debug
+        \item This new system is on the critical path to assessing over a billion devices daily
+        \item During the three month internship, two other team members have already used this new infrastructure to simplify their parts of the system
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Software Engineering Intern} % Job title
+    {Google} % Organization
+    {Ireland (Remote)} % Location
+    {May. 2020 - Aug. 2020} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item Worked with the security team to find bugs in Envoy, an open source L7 proxy, through randomized fuzz testing
+        \item Wrote a fuzz target for Envoy's xDS protocol, which provides a centralized infrastructure for distributing config files to Envoy nodes
+        \item Implemented an abstract state tracker that maintained the correct state of the nodes to verify that updates to the configurations were properly processed after executing the fuzzed input
+        \item Fixed two logical bugs in Envoy's implementation of xDS found by my fuzzer
+        \item Increased fuzz coverage over key files by more than 40\%
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}

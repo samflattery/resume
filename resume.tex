@@ -18,7 +18,9 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+\usepackage{multicol}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -30,6 +32,13 @@
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
+% \colorlet{awesome}{awesome-emerald}
+% \colorlet{awesome}{awesome-skyblue}
+% \colorlet{awesome}{awesome-pink}
+% \colorlet{awesome}{awesome-orange}
+% \colorlet{awesome}{awesome-nephritis}
+% \colorlet{awesome}{awesome-concrete}
+% \colorlet{awesome}{awesome-darknight}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
@@ -48,61 +57,42 @@
 
 
 %-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
+%   PERSONAL INFORMATION
+%   Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
-\name{Claud D.}{Park}
-\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
-\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+\name{}{Sam Flattery}
+\position{Software Engineer}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra informations}
-
-\quote{``Be the change that you want to see in the world."}
-
+\mobile{412-419-4127}
+\email{samflattery@gmail.com}
+\github{samflattery}
+\linkedin{samflattery}
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Curriculum Vitae}
-  {\thepage}
+  {Sam Flattery~~~·~~~Résumé}
+  {}
 
 
 %-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
+%   CV/RESUME CONTENT
+%   Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/education.tex}
-\input{cv/skills.tex}
-\input{cv/experience.tex}
-\input{cv/extracurricular.tex}
-\input{cv/honors.tex}
-\input{cv/presentation.tex}
-\input{cv/writing.tex}
-\input{cv/committees.tex}
+% \input{resume/summary.tex}
+\input{resume/education.tex}
+\input{resume/experience.tex}
+\input{resume/projects.tex}
+\input{resume/skills.tex}
+\input{resume/extracurricular.tex}
 
 
 %-------------------------------------------------------------------------------
